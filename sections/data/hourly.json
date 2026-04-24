@@ -1,0 +1,22 @@
+{
+  "shifts": [
+    {
+      "key": "morning",
+      "title": "Планирование за утро",
+      "hours": [7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "showPriorities": true
+    },
+    {
+      "key": "evening",
+      "title": "Планирование за вечер",
+      "hours": [16, 17, 18, 19, 20, 21, 22, 23],
+      "showPriorities": true
+    },
+    {
+      "key": "night",
+      "title": "Планирование за ночь",
+      "hours": [0, 1, 2, 3, 4, 5, 6],
+      "showPriorities": false
+    }
+  ]
+}

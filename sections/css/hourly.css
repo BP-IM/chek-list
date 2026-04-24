@@ -1,0 +1,366 @@
+.hourly-section {
+  width: 100%;
+}
+
+.hourly-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 18px;
+}
+
+.hourly-topbar-left h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+}
+
+.hourly-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hourly-topbar-right input,
+.hourly-btn {
+  height: 42px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.hourly-topbar-right input {
+  border: 1px solid #9d9d9d;
+  padding: 0 12px;
+  background: #fff;
+}
+
+.hourly-btn {
+  border: 1px solid #9d9d9d;
+  background: #f3f3f3;
+  padding: 0 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hourly-btn.primary {
+  background: #f2bc00;
+  border-color: #d3a400;
+}
+
+.hourly-status {
+  min-height: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.shift-block {
+  margin-bottom: 18px;
+}
+
+.shift-title {
+  background: #f2bc00;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid #666;
+  border-bottom: none;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.plan-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  background: #fff;
+}
+
+.plan-table th,
+.plan-table td {
+  border: 1px solid #666;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #111;
+  height: 28px;
+  min-width: 34px;
+  white-space: nowrap;
+}
+
+.plan-table thead th {
+  background: #efefef;
+  font-weight: 700;
+  padding: 4px 3px;
+  line-height: 1.1;
+}
+
+.plan-table .super-head {
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.time-col {
+  width: 72px;
+  min-width: 72px;
+}
+
+.plan-col {
+  background: #fff200;
+}
+
+.fact-col {
+  background: #a7d3df;
+}
+
+.lilac-col,
+.avg-value,
+.total-avg-value {
+  background: #ddd9e8;
+}
+
+.peach-col {
+  background: #efd0b4;
+}
+
+.green-total td {
+  background: #93d050;
+  font-weight: 700;
+}
+
+.cell-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 28px;
+  margin: 0;
+  padding: 0 3px;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  font-size: 12px;
+  color: #111;
+  font-family: inherit;
+  box-sizing: border-box;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.cell-input::-webkit-outer-spin-button,
+.cell-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cell-readonly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+
+/* Обычные ячейки: примерно 3 цифры */
+.plan-table td,
+.plan-table th {
+  min-width: 46px;
+}
+
+/* Sales: 6 цифр сиятындай */
+/* барлық plan/fact numeric ячейкалар бірдей */
+.plan-table th,
+.plan-table td {
+  border: 1px solid #666;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #111;
+  height: 28px;
+  min-width: 48px;
+  white-space: nowrap;
+}
+
+/* уақыт колонкасы бөлек */
+.time-col {
+  width: 72px;
+  min-width: 72px;
+}
+
+/* sales, sandwich, gc fact/plan — бәрі бірдей */
+.plan-col,
+.fact-col {
+  min-width: 48px !important;
+  width: 48px !important;
+}
+
+/* input толық ячейканы алсын */
+.cell-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 28px;
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  font-size: 12px;
+  color: #111;
+  font-family: inherit;
+  box-sizing: border-box;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.cell-input::-webkit-outer-spin-button,
+.cell-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cell-readonly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+  padding: 0 2px;
+  box-sizing: border-box;
+}
+
+/* средний чек 5 санға жетеді */
+.avg-cell,
+.avg-head {
+  min-width: 58px !important;
+  width: 58px !important;
+}
+
+/* GCPCH және OEPE сәл кеңдеу */
+.gcpch-cell,
+.gcpch-head,
+.oepe-cell,
+.oepe-head {
+  min-width: 58px !important;
+  width: 58px !important;
+}
+
+/* Av.Check: 5 цифр */
+.avg-cell,
+.avg-head {
+  min-width: 52px !important;
+  width: 52px !important;
+}
+
+/* GCPCH және OEPE: обычныйдан сәл кеңдеу */
+.gcpch-cell,
+.gcpch-head,
+.oepe-cell,
+.oepe-head {
+  min-width: 48px !important;
+  width: 48px !important;
+}
+
+.status-title {
+  background: #f2bc00;
+  text-align: center;
+  padding: 6px;
+  font-weight: 700;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.priorities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  background: #fff;
+}
+
+.priorities textarea {
+  min-height: 42px;
+  border: none;
+  border-right: 1px solid #666;
+  outline: none;
+  resize: vertical;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.priorities textarea:last-child {
+  border-right: none;
+}
+
+.loading-box,
+.error-box,
+.empty-box {
+  padding: 18px;
+  border: 1px solid #d4d4d4;
+  background: #fafafa;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .hourly-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .priorities {
+    grid-template-columns: 1fr;
+  }
+
+  .priorities textarea {
+    border-right: none;
+    border-bottom: 1px solid #666;
+  }
+
+  .priorities textarea:last-child {
+    border-bottom: none;
+  }
+}
+
+/*кос деген жер*/
+.plan-col,
+.fact-col {
+  min-width: 34px;
+}
+
+.cell-input {
+  font-size: 11px;
+  padding: 0 2px;
+}
+
+.cell-readonly {
+  padding: 0 2px;
+}

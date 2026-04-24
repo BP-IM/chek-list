@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чек-лист менеджера смены</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Верхняя шапка как в Excel -->
+    <div class="top-header">
+      <div class="top-header__row">
+        <div class="top-header__logo">
+          <img src="images/logo.jpeg" alt="logo" />
+        </div>
+
+        <div class="top-header__center">
+          <div class="top-header__wish">ЖЕЛАЕМ УДАЧНОЙ СМЕНЫ !</div>
+
+          <div class="top-header__managers">
+            <span>
+              Менеджер утро:
+              <input type="text" id="managerMorning" value="Майра" />
+            </span>
+
+            <span>
+              вечер:
+              <input type="text" id="managerEvening" value="Маржан" />
+            </span>
+
+            <span>
+              ночь:
+              <input type="text" id="managerNight" value="Диана" />
+            </span>
+          </div>
+        </div>
+
+        <div class="top-header__right">
+          <div class="top-header__date">
+            <label for="shiftDate">Дата</label>
+            <input type="date" id="shiftDate" />
+          </div>
+
+          <div class="top-header__icon">
+            <img src="images/icon.jpeg" alt="icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="top-header__bar"></div>
+    </div>
+
+    <section class="tabs-card">
+      <div class="tabs">
+        <button class="tab-btn active" data-section="prep">Подготовка к смене</button>
+        <button class="tab-btn" data-section="goals">Цели и приоритеты</button>
+        <button class="tab-btn" data-section="hourly">Почасовое планирование</button>
+        <button class="tab-btn" data-section="during">В течение смены</button>
+        <button class="tab-btn" data-section="results">Итоги смены</button>
+        <button type="button" class="pdf-btn" onclick="exportPDF()">Сохранить PDF</button>
+      </div>
+    </section>
+
+    <section class="content-card" id="content">
+      <div class="loading">Загрузка раздела...</div>
+    </section>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  window.supabaseClient = window.supabase.createClient(
+    "https://hpmocpehjdknsffilyee.supabase.co",
+    "sb_publishable_8Pmmrw0lBWiMx5n6RwaK9w_z4-FKIFF"
+  );
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+<script src="script.js"></script>
+<script src="pdf.js"></script>
+</body>
+</html>
