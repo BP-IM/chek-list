@@ -1,0 +1,114 @@
+.results-wrap {
+  width: 100%;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.results-small-title {
+  background: #f3e3bc;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-bottom: 1px solid #000;
+}
+
+.results-checklist {
+  width: 100%;
+}
+
+.results-row {
+  display: grid;
+  grid-template-columns: 54px 54px 1fr;
+  border-bottom: 1px solid #000;
+  min-height: 28px;
+}
+
+.result-check-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-right: 1px solid #000;
+  font-size: 14px;
+}
+
+.result-check-cell input {
+  width: 14px;
+  height: 14px;
+}
+
+.result-text {
+  padding: 4px 8px;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.red-text {
+  color: red;
+  font-weight: 800;
+}
+
+.results-main-title {
+  background: #f2bc00;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.result-priority-block {
+  border-bottom: 1px solid #000;
+}
+
+.result-priority-head {
+  background: #f3e3bc;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 8px 10px;
+  border-bottom: 1px solid #000;
+}
+
+.result-priority-textarea {
+  width: 100%;
+  min-height: 230px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  padding: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .results-row {
+    grid-template-columns: 44px 44px 1fr;
+  }
+
+  .results-main-title {
+    font-size: 22px;
+  }
+
+  .result-priority-head {
+    font-size: 18px;
+  }
+
+  .result-priority-textarea {
+    min-height: 150px;
+  }
+}
+
+/*выделение всех чеков утро/вечер*/
+.select-all-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+.select-all-row {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
